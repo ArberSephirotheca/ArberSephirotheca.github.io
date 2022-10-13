@@ -49,7 +49,7 @@ about_profile_image: images/2406919-_asuka_subs_neon_genesis_evangelion_remaster
 about_content: | # this will include new lines to allow paragraphs
   Hi, My name is Zheyuan Chen
 
-  Skill Set: Rust, C/C++, Python
+  Skill Set: Rust, Go, C/C++, Python
 
 content:
   - title: Projects # Title for the section
@@ -69,7 +69,7 @@ content:
         sub_title: On campus Software Engineering Intern
         caption: Dec 2021 - April 2022
         description: Our Mission is to cultivate an inclusive, creative, and entrepreneurial community that seeks to empower students to develop open-source solutions to real-world problems.
-    
+    ---
     layout: list # Type of content section (list/text)
     content:
       - layout: left
