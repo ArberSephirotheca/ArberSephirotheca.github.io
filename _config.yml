@@ -40,13 +40,21 @@ about_content: | # this will include new lines to allow paragraphs
   Skill Set: Rust, Go, C/C++, Python
 
 content:
-  - title: Projects # Title for the section
+  - title: Projects/Open Source Contribution # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Project/ Open Source Contribution
+        title: Telescope
         link: https://github.com/rcos/Telescope
+    content:
+      - layout: top-middle
+        title: Opendal
         link: https://github.com/datafuselabs/opendal
+    content:
+      - layout: top-middle
+        title: curveadm
+        link: https://github.com/opencurve/curveadm
+        
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
