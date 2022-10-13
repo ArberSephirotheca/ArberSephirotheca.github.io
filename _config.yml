@@ -68,7 +68,7 @@ content:
         # link_text: boringcompany.com
         sub_title: On campus Software Engineering Intern
         caption: Dec 2021 - April 2022
-        description: Our Mission is to cultivate an inclusive, creative, and entrepreneurial community that seeks to empower students to develop open-source solutions to real-world problems.
+        description: Our Mission is to cultivate an inclusive, creative, and entrepreneurial community that seeks to empower students to develop open-source solutions to real-world problems. Help the RCOS to develop a website using actix-web framework in Rust.
     
       - layout: left
         title: Open Source Promotion Plan
@@ -76,7 +76,9 @@ content:
         # link_text: boringcompany.com
         sub_title: Open Source Promotion Plan 2022 participant with NetEase
         caption: June 2022 - September 2022
-        description: Help the company [Netease](http://www.neteasegames.com) to develop a cluster management system in Go
+        description: Help the company [Netease](http://www.neteasegames.com) to develop a cluster management system in Go called Curveadm. CurveAdm is a tool for deploy and manage Curve cluster, it's easy to use and with rich features.
+
+
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -84,18 +86,23 @@ content:
         title:  University of California, Santa Cruz
         caption: 2022 - Present
         sub_title: MS CSE
-    layout: list # Type of content section (list/text)
-    content:
+
       - layout: left
         title:  Rensselaer Polytechnic Insititute
         caption: 2018 - 2022
         sub_title: BS Computer Science
 
-
+  - title: Research Interest
+    layout: text
+    content: |
+      - Distributed System
+      - Compiler
+      - Operating System
+  
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      Alongside my interests in computer science some of my other interests and hobbies are:
       - Gaming
       - Traveling 
 
