@@ -46,11 +46,9 @@ content:
       - layout: top-middle
         title: Telescope
         link: https://github.com/rcos/Telescope
-    content:
       - layout: top-middle
         title: Opendal
         link: https://github.com/datafuselabs/opendal
-    content:
       - layout: top-middle
         title: curveadm
         link: https://github.com/opencurve/curveadm
