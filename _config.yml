@@ -69,9 +69,7 @@ content:
         sub_title: On campus Software Engineering Intern
         caption: Dec 2021 - April 2022
         description: Our Mission is to cultivate an inclusive, creative, and entrepreneurial community that seeks to empower students to develop open-source solutions to real-world problems.
-    ---
-    layout: list # Type of content section (list/text)
-    content:
+    
       - layout: left
         title: Open Source Promotion Plan
         link: https://summer-ospp.ac.cn
