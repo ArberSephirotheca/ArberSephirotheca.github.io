@@ -35,9 +35,11 @@ linkedin_username: ZheyuanChen
 # about_title: About Me
 about_profile_image: images/2406919-_asuka_subs_neon_genesis_evangelion_remastered_08___asuka_strikes__dvd_704x480_x264_aac_ogg_.mkv_snapshot_21.51__2013.01.03_08.30.09_.png
 about_content: | # this will include new lines to allow paragraphs
-  Hi, My name is Zheyuan Chen
+ Hi, my name is Zheyuan Chen, a Computer Science and Engineering (CSE) master's student at UCSC, under the guidance of Professor [Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/)
 
   Skill Set: Rust, Go, C/C++, Python
+
+  Resume: 
 
 content:
   - title: Projects/Open Source Contribution # Title for the section
@@ -47,31 +49,12 @@ content:
         title: Telescope
         link: https://github.com/rcos/Telescope
       - layout: top-middle
-        title: Opendal
+        title: Incubator-Opendal
         link: https://github.com/datafuselabs/opendal
       - layout: top-middle
-        title: curveadm
-        link: https://github.com/opencurve/curveadm
+        title: MMTK
+        link: https://github.com/mmtk/mmtk-core
         
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Rensselaer Center for Open Source
-        link: https://rcos.io
-        # link_text: boringcompany.com
-        sub_title: On campus Software Engineering Intern
-        caption: Dec 2021 - April 2022
-        description: Our Mission is to cultivate an inclusive, creative, and entrepreneurial community that seeks to empower students to develop open-source solutions to real-world problems. Help the RCOS to develop a website using actix-web framework in Rust.
-    
-      - layout: left
-        title: Open Source Promotion Plan
-        link: https://summer-ospp.ac.cn
-        # link_text: boringcompany.com
-        sub_title: Open Source Promotion Plan 2022 participant with NetEase
-        caption: June 2022 - September 2022
-        description: Help the company [Netease](http://www.neteasegames.com) to develop a cluster management system in Go called Curveadm. CurveAdm is a tool for deploy and manage Curve cluster, it's easy to use and with rich features.
-
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -91,6 +74,8 @@ content:
     content: |
       - Distributed System
       - Compiler
+      - Heterogeneous Computing
+      - GPGPU
       - Operating System
   
   - title: A Little More About Me
