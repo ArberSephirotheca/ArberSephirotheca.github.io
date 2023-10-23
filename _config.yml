@@ -37,11 +37,11 @@ about_profile_image: images/2406919-_asuka_subs_neon_genesis_evangelion_remaster
 about_content: | # this will include new lines to allow paragraphs
  Hi, my name is Zheyuan Chen, a Computer Science and Engineering (CSE) master's student at UCSC, under the guidance of Professor [Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/)
 
-  Skill Set: Rust, Go, C/C++, Python
+  **Skill Set**: Rust, Go, C/C++, Python
 
-  Resume: [Here](assets/Zheyuan_Chen_CV.pdf)
+  **Resume**: [Here](assets/Zheyuan_Chen_CV.pdf)
   
-  Transcript: [Here](assets/SSR_TSRPT.pdf)
+  **Transcript**: [Here](assets/SSR_TSRPT.pdf)
 
 content:
   - title: Projects/Open Source Contribution # Title for the section
