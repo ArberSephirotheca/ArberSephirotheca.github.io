@@ -23,7 +23,7 @@ Transcript
 ======
 [Download](http://academicpages.github.io/files/SSR_TSRPT.pdf)
 
-Work experience
+Work & Research experience
 ======
 * Winter 2024: Research Assistant
   * University of California, Santa Cruz
