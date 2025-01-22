@@ -48,6 +48,9 @@ Work & Research experience
 Skills
 ======
 * Rust
+* C++
+* Go
+* Python
 * GPU Programming
   * CUDA
   * Vulkan
