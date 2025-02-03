@@ -17,11 +17,11 @@ Education
 
 CV
 ======
-[Download](http://academicpages.github.io/files/Zheyuan_Chen_CV.pdf)
+[Download](https://arbersephirotheca.github.io/files/Zheyuan_Chen_CV.pdf)
 
 Transcript
 ======
-[Download](http://academicpages.github.io/files/SSR_TSRPT.pdf)
+[Download](https://arbersephirotheca.github.io/files/SSR_TSRPT.pdf)
 
 Work & Research experience
 ======
