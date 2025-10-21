@@ -25,6 +25,11 @@ Transcript
 
 Work & Research experience
 ======
+* Summer 2025: Research Intern
+  * Applied SIMT-Step semantics to shader development, focusing on warp execution correctness in HLSL.
+  * Built a Clang-AST–based interpreter and fuzzing framework for HLSL to automatically generate warp execution tests.
+  * Implemented a reducer to minimize failing tests into conformance test suites, enabling systematic validation across GPU vendors.
+  * Identified and reported warp execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs.
 * Winter 2024: Research Assistant
   * University of California, Santa Cruz
   * Duties included: Developed a formal specification framework using TLA+, under the supervision of Professor Tyler Sorensen, to verify and analyze various GPU forward progress models.

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi Hi, I'm a 1st-year PhD student in Computer Science from [University of California, Santa Cruz](https://www.ucsc.edu/about/). I'm advised by [Prof. Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/) and a member of the [LSD lab](https://lsd.ucsc.edu/). My research lies in GPGPU, Heterogeneous Programming and Compiler!
+Hi, I'm a 2nd-year PhD student in Computer Science from [University of California, Santa Cruz](https://www.ucsc.edu/about/). I'm advised by [Prof. Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/) and a member of the [LSD lab](https://lsd.ucsc.edu/). My research lies in GPGPU, Heterogeneous Programming and Compiler!
 
 I am currently modeling GPU forward progress guarantees and concurrency semantics for SPIR-V using the formal specification language [TLA+](https://lamport.azurewebsites.net/tla/tla.html).
 You can checkout my [Github Repo](https://github.com/ArberSephirotheca/gpu-forward-progress-TLAPlus) for more information.
