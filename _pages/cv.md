@@ -26,6 +26,7 @@ Transcript
 Work & Research experience
 ======
 * Summer 2025: Research Intern
+  * **Microsoft Research**
   * Applied SIMT-Step semantics to shader development, focusing on warp execution correctness in HLSL.
   * Built a Clang-AST–based interpreter and fuzzing framework for HLSL to automatically generate warp execution tests.
   * Implemented a reducer to minimize failing tests into conformance test suites, enabling systematic validation across GPU vendors.
@@ -36,12 +37,12 @@ Work & Research experience
   * Supervisor: Tyler Sorensen
 
 * Fall 2024: Software Engineer Intern
-  * Mercedes-Benz Research & Development North America
+  * **Mercedes-Benz Research & Development North America**
   * Duties includes: Autonomous Driving - Middleware
   <!-- * Supervisor: The Users -->
 
 * Summer 2024: Software Engineer Intern
-  * Mercedes-Benz Research & Development North America
+  * **Mercedes-Benz Research & Development North America**
   * Duties included: Autonomous Driving - Middleware
   <!-- * Supervisor: Professor Hub -->
 
