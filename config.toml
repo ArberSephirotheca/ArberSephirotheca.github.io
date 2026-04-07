@@ -1,6 +1,6 @@
 title = "Zheyuan Chen"
 base_url = "https://arbersephirotheca.github.io"
-description = "Ph.D. student in Computer Science at UC Santa Cruz working on GPU systems, heterogeneous programming, and compilers."
+description = "Ph.D. student in Computer Science at UC Santa Cruz working on GPU semantics, formal verification, and portable ML kernels."
 author = "Zheyuan Chen"
 theme = "duckquill"
 
@@ -42,9 +42,9 @@ styles = ["site.css"]
 source_url = "https://github.com/ArberSephirotheca/ArberSephirotheca.github.io"
 
 [extra.profile]
-role = "Ph.D. student in Computer Science at UC Santa Cruz"
-lab = "LSD Lab"
-location = "Santa Clara, CA"
+role = "Ph.D. student in Computer Science & Engineering at UC Santa Cruz"
+lab = "CHPL"
+location = "Santa Cruz, CA"
 hero_image = "images/asuka.png"
 hero_image_alt = "Profile illustration"
 resume_pdf = "files/Zheyuan_Chen_CV.pdf"
@@ -53,7 +53,7 @@ email = "mailto:zchen406@ucsc.edu"
 github = "https://github.com/ArberSephirotheca"
 linkedin = "https://www.linkedin.com/in/zheyuan-chen-7b3b78180/"
 scholar = "https://scholar.google.com/citations?user=o8bUhzIAAAAJ&hl=zh-CN"
-topics = ["GPU forward progress", "SPIR-V concurrency", "Formal methods", "Compiler systems"]
+topics = ["GPU semantics", "Formal Methods", "Programming Languages", "Compilers", "ML Systems"]
 
 [extra.nav]
 show_feed = false

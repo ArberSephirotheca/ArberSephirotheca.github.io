@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 {% import "macros/publications.html" as publications_macros %}
+{% import "macros/teaching.html" as teaching_macros %}
 
 {% block content %}
 {% set publications = get_section(path="publications/_index.md") %}
+{% set news = get_section(path="news/_index.md") %}
 {% set teaching = get_section(path="teaching/_index.md") %}
 
 <div class="home-mascot rabbit-terminal crt scanlines" aria-hidden="true">
 	<div class="rabbit-stage">
-		<pre class="rabbit rabbit-aa" lang="ja">　　　r‐z´　　　/ 　 　　　　　　｀ヽL＿
+		<pre class="rabbit rabbit-aa" lang="ja">　　　　　r‐z´　　/ 　 　　　　　　｀ヽL＿
 　 　 　　|/|/　/　/| 　|　　 ﾄ､ ＼ ＼ヽﾄ ＼
 　　　　　V/|/|　/‐|＜|_,l　 |_＞‐ヽ| ﾄ､|| ﾄ､|
 　　　　 イ|ｲ　|/y'´（.j`´|＼|´ﾋ）｀'v|ﾉN｀| |
@@ -49,8 +51,8 @@
 			<pre>research://status
 lab       = "{{ config.extra.profile.lab }}"
 location  = "{{ config.extra.profile.location }}"
-focus     = ["GPU forward progress", "SPIR-V semantics"]
-tooling   = ["TLA+", "Rust", "compiler infra"]
+focus     = ["GPU semantics", "formal verification", "portable ML kernels"]
+tooling   = ["Rust", "TLA+", "WebGPU", "MLIR"]
 state     = "active"<span class="cursor">_</span></pre>
 		</div>
 	</div>
@@ -60,12 +62,21 @@ state     = "active"<span class="cursor">_</span></pre>
 	{{ section.content | safe }}
 </section>
 
+{% if news.content %}
 <section class="home-panel">
 	<div class="section-header">
-		<div>
-			<p class="section-kicker">Research</p>
-			<h2>Selected Publications</h2>
-		</div>
+		<p class="section-kicker">Updates</p>
+		<a href="{{ news.permalink | safe }}">View all</a>
+	</div>
+	<div class="news-feed">
+		{{ news.content | safe }}
+	</div>
+</section>
+{% endif %}
+
+<section class="home-panel">
+	<div class="section-header">
+		<p class="section-kicker">Research</p>
 		<a href="{{ publications.permalink | safe }}">View all</a>
 	</div>
 	{% if publications.pages | length > 0 %}
@@ -84,11 +95,7 @@ state     = "active"<span class="cursor">_</span></pre>
 		</div>
 		<a href="{{ teaching.permalink | safe }}">View all</a>
 	</div>
-	<ul class="compact-list">
-		{% for page in teaching.pages %}
-		<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-		{% endfor %}
-	</ul>
+	{{ teaching_macros::compact(pages=teaching.pages) }}
 </section>
 {% endif %}
 {% endblock content %}

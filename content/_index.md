@@ -2,11 +2,26 @@
 title = "About"
 +++
 
-> [!TIP]
-> Current work: formalizing GPU forward progress and concurrency semantics, then checking those ideas against real shader toolchains and compiler pipelines.
+Hi, I'm a 2nd-year PhD student in Computer Science from [University of California, Santa Cruz](https://www.ucsc.edu/about/). I'm advised by [Prof. Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/). My research lies in GPGPU, Programming Language, Compiler and ML Sys!
 
-Hi, I'm a 2nd-year PhD student in Computer Science at [UC Santa Cruz](https://www.ucsc.edu/about/). I'm advised by [Prof. Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/) and I work in the [LSD Lab](https://lsd.ucsc.edu/). My research sits at the boundary of GPU systems, heterogeneous programming, formal methods, and compiler infrastructure.
+I am particularly interested in GPU semantics and highly efficient portable kernel design. I believe that the lack of precise, formal semantics in current GPU programming models, especially around subgroup execution, synchronization, and memory consistency, limits our ability to reason about correctness and performance portability. My research aims to develop formal foundations and practical tools for rigorous reasoning about GPU behavior, and to leverage these insights to design portable kernels that achieve both correctness and high performance across heterogeneous architectures.
 
-I am currently modeling GPU forward progress guarantees and SPIR-V concurrency semantics using [TLA+](https://lamport.azurewebsites.net/tla/tla.html). I also build tooling around shader execution and compiler behavior, including Rust-based infrastructure and test generation for SIMT-style execution models.
+One way to summarize the kind of systems work I like is:
+
+```rust
+struct Research {
+    focus: [GpuSemantics, FormalVerification, PortableKernels],
+}
+
+impl Research {
+    fn optimize(&self) -> Goal {
+        semantics::model(SubgroupBehavior)
+            .verify_with(FormalMethod)
+            .compile_to(PortableGpuKernel)
+    }
+}
+
+const GOAL: &str = "Correct and fast kernels across architectures";
+```
 
 The quickest way to navigate this site is through my [publications](@/publications/_index.md), [CV](@/cv.md), and public code on [GitHub](https://github.com/ArberSephirotheca).

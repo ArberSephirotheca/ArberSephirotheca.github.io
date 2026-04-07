@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/publications.html" as publications_macros %}
+{% import "macros/teaching.html" as teaching_macros %}
 
 {% block content %}
 {% set publications = get_section(path="publications/_index.md") %}
@@ -22,12 +23,7 @@
 {% if teaching.pages | length > 0 %}
 <section class="cv-section">
 	<h2>Teaching</h2>
-	<ul class="compact-list">
-		{% for page in teaching.pages %}
-		<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-		{% endfor %}
-	</ul>
+	{{ teaching_macros::compact(pages=teaching.pages) }}
 </section>
 {% endif %}
 {% endblock content %}
-

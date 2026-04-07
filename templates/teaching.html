@@ -1,17 +1,13 @@
 {% extends "base.html" %}
+{% import "macros/teaching.html" as teaching_macros %}
 
 {% block content %}
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
 {% if section.pages | length > 0 %}
-<ul class="compact-list">
-	{% for page in section.pages %}
-	<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-	{% endfor %}
-</ul>
+{{ teaching_macros::compact(pages=section.pages) }}
 {% else %}
 <p class="empty-state">No teaching entries are published yet.</p>
 {% endif %}
 {% endblock content %}
-

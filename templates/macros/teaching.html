@@ -1,0 +1,19 @@
+{% import "macros/rel_attributes.html" as macros_rel_attributes %}
+
+{% macro compact(pages) %}
+<ul class="compact-list">
+	{% for page in pages %}
+	<li>
+		<a href="{{ page.permalink | safe }}">{{ page.extra.term | default(value=page.title) }}</a>
+		<span class="compact-meta">{{ config.extra.separator | default(value="•") }} {{ page.extra.role | default(value="Teaching") }}{% if page.extra.course_code %}, {{ page.extra.course_code }}{% endif %}</span>
+		{% if page.extra.course_url %}
+		<a
+			class="compact-link external"
+			href="{{ page.extra.course_url | safe }}"
+			rel="{{ macros_rel_attributes::rel_attributes() | trim }}"
+		>Course page</a>
+		{% endif %}
+	</li>
+	{% endfor %}
+</ul>
+{% endmacro compact %}

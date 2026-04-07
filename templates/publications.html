@@ -6,9 +6,8 @@
 {{ section.content | safe }}
 
 {% if section.pages | length > 0 %}
-{{ publications_macros::cards(pages=section.pages) }}
+{{ publications_macros::academic_list(pages=section.pages) }}
 {% else %}
 <p class="empty-state">No publications have been added yet.</p>
 {% endif %}
 {% endblock content %}
-

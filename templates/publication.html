@@ -2,7 +2,7 @@
 {% import "macros/rel_attributes.html" as macros_rel_attributes %}
 
 {% block content %}
-<article class="publication-page">
+<article class="publication-page{% if page.extra.award %} publication-page-awarded{% endif %}">
 	<p class="publication-meta">
 		{% if page.extra.venue %}
 		<span class="publication-venue">{{ page.extra.venue }}</span>
@@ -15,17 +15,49 @@
 
 	<h1>{{ page.title }}</h1>
 
-	{% if page.taxonomies.categories %}
+	{% if page.authors %}
+	<p class="publication-authors publication-authors-detail">{{ page.authors | join(sep=", ") }}</p>
+	{% endif %}
+
+	{% if page.extra.venue_full or page.extra.venue or page.extra.award %}
+	<p class="publication-venue-detail">
+		{% if page.extra.venue_full %}
+		<em>{{ page.extra.venue_full }}</em>
+		{% elif page.extra.venue %}
+		<em>{{ page.extra.venue }}</em>
+		{% endif %}
+		{% if page.date %}, {{ page.date | date(format="%Y") }}{% endif %}
+		{% if page.extra.award %}
+		<span class="publication-award-inline">[{{ page.extra.award }}]</span>
+		{% endif %}
+	</p>
+	{% endif %}
+
+	{% if page.taxonomies.categories or page.extra.award %}
 	<div class="publication-chips">
+		{% if page.extra.award %}
+		<span class="publication-award">{{ page.extra.award }}</span>
+		{% endif %}
+		{% if page.taxonomies.categories %}
 		{% for category in page.taxonomies.categories %}
 		<span class="publication-chip">{{ category }}</span>
 		{% endfor %}
+		{% endif %}
 	</div>
 	{% endif %}
 
 	<div class="publication-links publication-links-top">
 		{% if page.extra.paper_url %}
 		<a href="{{ page.extra.paper_url | safe }}">Download PDF</a>
+		{% endif %}
+		{% if page.extra.slides_url %}
+		<a href="{{ page.extra.slides_url | safe }}">Slides</a>
+		{% endif %}
+		{% if page.extra.code_url %}
+		<a class="external" href="{{ page.extra.code_url | safe }}" rel="{{ macros_rel_attributes::rel_attributes() | trim }}">Code</a>
+		{% endif %}
+		{% if page.extra.doi_url %}
+		<a class="external" href="{{ page.extra.doi_url | safe }}" rel="{{ macros_rel_attributes::rel_attributes() | trim }}">DOI</a>
 		{% endif %}
 		{% if page.extra.external_url %}
 		<a class="external" href="{{ page.extra.external_url | safe }}" rel="{{ macros_rel_attributes::rel_attributes() | trim }}">External link</a>
@@ -39,4 +71,3 @@
 	{{ page.content | safe }}
 </article>
 {% endblock content %}
-

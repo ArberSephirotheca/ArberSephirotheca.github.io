@@ -4,45 +4,47 @@ template = "cv.html"
 aliases = ["/resume", "/resume/"]
 +++
 
+## Contact & Downloads
+
+- Email: [zchen406@ucsc.edu](mailto:zchen406@ucsc.edu)
+- [Download CV as PDF](/files/Zheyuan_Chen_CV.pdf)
+- [Download transcript as PDF](/files/SSR_TSRPT.pdf)
+
 ## Education
 
-- Ph.D. in Computer Science, University of California, Santa Cruz, 2029 (expected)
-- M.S. in Computer Science, University of California, Santa Cruz, 2024
-- B.S. in Computer Science, Rensselaer Polytechnic Institute, 2022
+### University of California, Santa Cruz
+Ph.D. in Computer Science and Engineering, September 2024 to present
 
-## Downloads
+### University of California, Santa Cruz
+M.S. in Computer Science and Engineering, June 2024
 
-- [CV PDF](/files/Zheyuan_Chen_CV.pdf)
-- [Transcript PDF](/files/SSR_TSRPT.pdf)
+### Rensselaer Polytechnic Institute
+B.S. in Computer Science, May 2022
 
-## Work & Research Experience
+## Research & Work Experience
 
-- Summer 2025: Research Intern, **Microsoft Research**
-  - Applied SIMT-Step semantics to shader development, focusing on warp execution correctness in HLSL.
-  - Built a Clang AST-based interpreter and fuzzing framework for HLSL to automatically generate warp execution tests.
-  - Implemented a reducer to minimize failing tests into conformance test suites, enabling systematic validation across GPU vendors.
-  - Identified and reported warp execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs.
-- Winter 2024: Research Assistant, University of California, Santa Cruz
-  - Developed a formal specification framework using TLA+ under the supervision of Professor Tyler Sorensen to verify and analyze GPU forward progress models.
-- Fall 2024: Software Engineer Intern, **Mercedes-Benz Research & Development North America**
-  - Autonomous Driving middleware.
-- Summer 2024: Software Engineer Intern, **Mercedes-Benz Research & Development North America**
-  - Autonomous Driving middleware.
-- Spring 2024: Research Assistant, University of California, Santa Cruz
-  - Developed a formal specification framework using TLA+ under the supervision of Professor Tyler Sorensen to verify and analyze GPU forward progress models.
+### Microsoft Research, RiSE Group
+Research Intern, Redmond, Washington, June 2025 to September 2025
+
+- Developed **SIMT-Step**, a formal operational semantics for GPU warp execution that models divergence, reconvergence, and subgroup behavior across architectures.
+- Built a Clang AST-based interpreter and fuzzing framework for High-Level Shading Language (HLSL) to generate warp-execution tests automatically.
+- Discovered and reported warp-execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs.
+- Extended the HLSL testing infrastructure with more flexible test definitions, improving coverage and long-term maintainability.
+
+### Mercedes-Benz Research & Development North America
+Software Engineering Intern, Sunnyvale, California, June 2024 to December 2024
+
+- Contributed to middleware for automated driving systems, improving communication, data flow, and resource sharing across safety-critical components.
+- Developed an automated toolchain to migrate a large Bazel-based CUDA/C++ project to SYCL, reducing manual effort by 90% and improving portability across heterogeneous hardware.
+
+### Languages, Systems, and Data Lab, University of California, Santa Cruz
+Research Assistant, January 2023 to present
+
+- Developed a formal operational semantics for GPU warp execution to address the lack of rigorous semantic models in existing GPU programming languages.
+- Verified the semantics in TLA+ and used the model to reason about subgroup execution behavior.
+- Optimized the portable **FlashAttention** kernel in llama.cpp's **WGSL** backend by applying software pipelining to overlap global memory access with tensor computation, improving performance by 30%.
 
 ## Skills
 
-- Rust
-- C++
-- Go
-- Python
-- GPU Programming
-  - CUDA
-  - Vulkan
-  - SYCL
-
-## Service & Leadership
-
-Additional service updates can be added here as they become public.
-
+- Languages: Rust, C/C++, Python, Go, HLSL, GLSL, Metal, SPIR-V, TLA+
+- Frameworks and systems: CUDA, SYCL, Vulkan, HIP, OpenCL, LLVM, MLIR

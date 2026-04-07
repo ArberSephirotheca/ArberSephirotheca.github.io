@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template requires resume.cls to be in the same directory.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\address{+1 2017797262}
+\address{sephirotheca17@gmail.com}
+\name{Zheyuan Chen}
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+{\bf University of California, Santa Cruz} \hfill {\em Sept 2024 -- Present} \\
+Ph.D., Computer Science and Engineering
+
+\end{rSection}
+
+\begin{rSection}{Research \& Work Experience}
+
+\begin{rSubsection}{Microsoft Research}{Jun 2025 -- Sep 2025}{Research Intern, RiSE Group}{Redmond, WA}
+\item Developed \textbf{SIMT-Step}, a formal operational semantics for GPU warp execution, providing a rigorous model of divergence, reconvergence, and subgroup behavior across architectures.
+\item Built a Clang AST-based interpreter and fuzzing framework for HLSL to automatically generate warp-execution tests.
+\item Discovered and reported numerous warp-execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs, revealing inconsistencies in hardware and compiler behavior.
+\end{rSubsection}
+
+\begin{rSubsection}{Mercedes-Benz Research \& Development North America}{Jun 2024 -- Dec 2024}{Software Engineering Intern}{Sunnyvale, CA}
+\item Contributed to middleware for automated driving systems (ADS), improving communication, data flow, and resource sharing across safety-critical components.
+\item Developed an automated toolchain to migrate a large Bazel project (CUDA/C++) to SYCL, reducing manual effort by 90\% and improving portability across heterogeneous hardware.
+\end{rSubsection}
+
+\begin{rSubsection}{Languages, Systems, and Data (LSD) Lab}{Jan 2023 -- Present}{Research Assistant}{University of California, Santa Cruz}
+\item Developed a formal operational semantics for GPU warp execution to address the lack of rigorous semantic models in existing GPU programming languages, and verified key behaviors using TLA+.
+\item Helped launch the \textbf{WebGPU} backend in llama.cpp, with primary contributions to the portable \textbf{FlashAttention} kernel in \textbf{WGSL}.
+
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Publications}
+
+\item \textbf{Zheyuan Chen}, Naomi Rehman, Guido Mart\'{\i}nez, and Tyler Sorensen. ``SIMT-Step Execution: A Flexible Operational Semantics for GPU Subgroup Behavior.'' \textit{PLDI 2026} (accepted).
+
+\item Yanwen Xu, Rithik Sharma, \textbf{Zheyuan Chen}, Shaan Mistry, and Tyler Sorensen. ``BetterTogether: An Interference-Aware Framework for Fine-grained Software Pipelining on Heterogeneous SoCs.'' \textit{IISWC 2025}. \textbf{Best Paper Award}.
+
+\end{rSection}
+
+\begin{rSection}{Skills}
+
+\item \textbf{Languages:} Rust, C/C++, Python, Go, HLSL, GLSL, Metal, SPIR-V, TLA+
+\item \textbf{Frameworks \& Systems:} CUDA, SYCL, Vulkan, HIP, OpenCL, LLVM, MLIR
+
+\end{rSection}
+
+\end{document}

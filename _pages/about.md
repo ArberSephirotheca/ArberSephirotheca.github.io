@@ -7,10 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm a 2nd-year PhD student in Computer Science from [University of California, Santa Cruz](https://www.ucsc.edu/about/). I'm advised by [Prof. Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/) and a member of the [LSD lab](https://lsd.ucsc.edu/). My research lies in GPGPU, Heterogeneous Programming and Compiler!
+Hi, I'm a 2nd-year PhD student in Computer Science from [University of California, Santa Cruz](https://www.ucsc.edu/about/). I'm advised by [Prof. Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/). My research lies in GPGPU, Programming Language, Compiler and ML Sys!
 
-I am currently modeling GPU forward progress guarantees and concurrency semantics for SPIR-V using the formal specification language [TLA+](https://lamport.azurewebsites.net/tla/tla.html).
-You can checkout my [Github Repo](https://github.com/ArberSephirotheca/gpu-forward-progress-TLAPlus) for more information.
+I am particularly interested in GPU semantics and highly efficient portable kernel design. I believe that the lack of precise, formal semantics in current GPU programming models, especially around subgroup execution, synchronization, and memory consistency, limits our ability to reason about correctness and performance portability. My research aims to develop formal foundations and practical tools for rigorous reasoning about GPU behavior, and to leverage these insights to design portable kernels that achieve both correctness and high performance across heterogeneous architectures.
 
 Research
 ======

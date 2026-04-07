@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% import "macros/rel_attributes.html" as macros_rel_attributes %}
+
+{% block content %}
+<article class="teaching-entry">
+	<h1>{{ page.title }}</h1>
+
+	<p class="publication-venue-detail">
+		{% if page.extra.term %}
+		<strong>{{ page.extra.term }}</strong>
+		{% endif %}
+		{% if page.extra.role %}
+		<span class="publication-separator">{{ config.extra.separator | default(value="•") }}</span>
+		{{ page.extra.role }}
+		{% endif %}
+	</p>
+
+	{% if page.extra.course_url %}
+	<div class="publication-links publication-links-top">
+		<a
+			class="external"
+			href="{{ page.extra.course_url | safe }}"
+			rel="{{ macros_rel_attributes::rel_attributes() | trim }}"
+		>Course page</a>
+	</div>
+	{% endif %}
+
+	{{ page.content | safe }}
+</article>
+{% endblock content %}

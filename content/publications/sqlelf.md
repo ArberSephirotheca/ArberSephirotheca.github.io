@@ -7,7 +7,7 @@ template = "publication.html"
 aliases = ["/publications/2024-05-06-sqlelf/"]
 
 [taxonomies]
-categories = ["Conference Papers"]
+categories = ["arXiv"]
 
 [extra]
 venue = "arXiv"
