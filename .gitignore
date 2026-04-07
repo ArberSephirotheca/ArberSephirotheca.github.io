@@ -5,7 +5,6 @@ public/
 
 # Ignore the directory for local files during development
 local/
-duckquill/
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
