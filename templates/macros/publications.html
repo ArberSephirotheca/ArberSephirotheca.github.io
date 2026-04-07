@@ -1,0 +1,59 @@
+{% import "macros/rel_attributes.html" as macros_rel_attributes %}
+
+{% macro cards(pages) %}
+<div class="publication-list">
+	{% for page in pages %}
+	<article class="publication-card">
+		<p class="publication-meta">
+			{% if page.extra.venue %}
+			<span class="publication-venue">{{ page.extra.venue }}</span>
+			{% endif %}
+			{% if page.date %}
+			<span class="publication-separator">{{ config.extra.separator | default(value="•") }}</span>
+			<time datetime="{{ page.date | date(format='%+') }}">{{ page.date | date(format="%Y") }}</time>
+			{% endif %}
+		</p>
+
+		<h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+
+		{% if page.description %}
+		<p>{{ page.description }}</p>
+		{% endif %}
+
+		{% if page.taxonomies.categories %}
+		<div class="publication-chips">
+			{% for category in page.taxonomies.categories %}
+			<span class="publication-chip">{{ category }}</span>
+			{% endfor %}
+		</div>
+		{% endif %}
+
+		<div class="publication-links">
+			<a href="{{ page.permalink | safe }}">Details</a>
+			{% if page.extra.paper_url %}
+			<a href="{{ page.extra.paper_url | safe }}">PDF</a>
+			{% endif %}
+			{% if page.extra.external_url %}
+			<a class="external" href="{{ page.extra.external_url | safe }}" rel="{{ macros_rel_attributes::rel_attributes() | trim }}">External</a>
+			{% endif %}
+		</div>
+	</article>
+	{% endfor %}
+</div>
+{% endmacro cards %}
+
+{% macro compact(pages) %}
+<ul class="compact-list">
+	{% for page in pages %}
+	<li>
+		<a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+		{% if page.extra.venue %}
+		<span class="compact-meta">{{ config.extra.separator | default(value="•") }} {{ page.extra.venue }}</span>
+		{% endif %}
+		{% if page.extra.paper_url %}
+		<a class="compact-link" href="{{ page.extra.paper_url | safe }}">PDF</a>
+		{% endif %}
+	</li>
+	{% endfor %}
+</ul>
+{% endmacro compact %}

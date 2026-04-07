@@ -1,0 +1,82 @@
+title = "Zheyuan Chen"
+base_url = "https://arbersephirotheca.github.io"
+description = "Ph.D. student in Computer Science at UC Santa Cruz working on GPU systems, heterogeneous programming, and compilers."
+author = "Zheyuan Chen"
+theme = "duckquill"
+
+compile_sass = true
+minify_html = true
+generate_feeds = false
+build_search_index = true
+default_language = "en"
+
+taxonomies = [{ name = "categories", feed = false }]
+
+[markdown]
+smart_punctuation = true
+bottom_footnotes = true
+github_alerts = true
+external_links_target_blank = true
+external_links_no_referrer = true
+external_links_no_follow = false
+
+[markdown.highlighting]
+light_theme = "solarized-light"
+dark_theme = "solarized-dark"
+
+[search]
+index_format = "fuse_json"
+
+[extra]
+accent_color = "#b45a3c"
+accent_color_dark = "#f0a161"
+bundled_fonts = true
+emoji_favicon = "🪶"
+separator = "✦"
+show_copy_button = true
+show_reading_time = false
+show_share_button = false
+show_backlinks = false
+card = false
+styles = ["site.css"]
+source_url = "https://github.com/ArberSephirotheca/ArberSephirotheca.github.io"
+
+[extra.profile]
+role = "Ph.D. student in Computer Science at UC Santa Cruz"
+lab = "LSD Lab"
+location = "Santa Clara, CA"
+hero_image = "images/asuka.png"
+hero_image_alt = "Profile illustration"
+resume_pdf = "files/Zheyuan_Chen_CV.pdf"
+transcript_pdf = "files/SSR_TSRPT.pdf"
+email = "mailto:zchen406@ucsc.edu"
+github = "https://github.com/ArberSephirotheca"
+linkedin = "https://www.linkedin.com/in/zheyuan-chen-7b3b78180/"
+scholar = "https://scholar.google.com/citations?user=o8bUhzIAAAAJ&hl=zh-CN"
+topics = ["GPU forward progress", "SPIR-V concurrency", "Formal methods", "Compiler systems"]
+
+[extra.nav]
+show_feed = false
+show_theme_switcher = true
+show_repo = true
+links = [
+  { url = "@/publications/_index.md", name = "Publications" },
+  { url = "@/teaching/_index.md", name = "Teaching" },
+  { url = "@/cv.md", name = "CV" }
+]
+
+[extra.footer]
+links = [
+  { url = "@/publications/_index.md", name = "Publications" },
+  { url = "@/teaching/_index.md", name = "Teaching" },
+  { url = "@/cv.md", name = "CV" },
+  { url = "https://scholar.google.com/citations?user=o8bUhzIAAAAJ&hl=zh-CN", name = "Google Scholar" }
+]
+socials = [
+  { url = "https://github.com/ArberSephirotheca", name = "GitHub", icon = "%3Csvg%20role%3D%27img%27%20viewBox%3D%270%200%2024%2024%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath%20d%3D%27M12%20.297c-6.63%200-12%205.373-12%2012%200%205.303%203.438%209.8%208.205%2011.385.6.113.82-.258.82-.577%200-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422%2018.07%203.633%2017.7%203.633%2017.7c-1.087-.744.084-.729.084-.729%201.205.084%201.838%201.236%201.838%201.236%201.07%201.835%202.809%201.305%203.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93%200-1.31.465-2.38%201.235-3.22-.135-.303-.54-1.523.105-3.176%200%200%201.005-.322%203.3%201.23.96-.267%201.98-.399%203-.405%201.02.006%202.04.138%203%20.405%202.28-1.552%203.285-1.23%203.285-1.23.645%201.653.24%202.873.12%203.176.765.84%201.23%201.91%201.23%203.22%200%204.61-2.805%205.625-5.475%205.92.42.36.81%201.096.81%202.22%200%201.606-.015%202.896-.015%203.286%200%20.315.21.69.825.57C20.565%2022.092%2024%2017.592%2024%2012.297c0-6.627-5.373-12-12-12%27/%3E%3C/svg%3E" },
+  { url = "https://scholar.google.com/citations?user=o8bUhzIAAAAJ&hl=zh-CN", name = "Google Scholar", icon = "%3Csvg%20role%3D%22img%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3EGoogle%20Scholar%3C%2Ftitle%3E%3Cpath%20d%3D%22M12%2024a7%207%200%201%200%200-14%207%207%200%200%200%200%2014zm0-14L0%205.5%2012%200l12%205.5L12%2010zm0%202.2a9.2%209.2%200%200%201%207.4%203.7l4.6-2.1v6L19%2022a9.15%209.15%200%200%201-14%200L0%2019.8v-6l4.6%202.1A9.2%209.2%200%200%201%2012%2012.2z%22%2F%3E%3C%2Fsvg%3E" },
+  { url = "https://www.linkedin.com/in/zheyuan-chen-7b3b78180/", name = "LinkedIn", icon = "%3Csvg%20role%3D%22img%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3ELinkedIn%3C%2Ftitle%3E%3Cpath%20d%3D%22M20.447%2020.452H16.89V9.569c0-2.593-.092-5.928-3.611-5.928-3.618%200-4.174%202.827-4.174%205.744v11.067H5.548V9h3.414v1.561h.05c.476-.9%201.637-1.85%203.368-1.85%203.604%200%204.269%202.37%204.269%205.455v6.286zM1.73%207.433A2.066%202.066%200%201%201%201.73%203.3a2.066%202.066%200%200%201%200%204.132zM3.507%2020.452H-.048V9h3.555v11.452zM22.225%200H1.771C.792%200%200%20.774%200%201.729v20.542C0%2023.227.792%2024%201.771%2024h20.451C23.2%2024%2024%2023.227%2024%2022.271V1.729C24%20.774%2023.2%200%2022.222%200h.003z%22%2F%3E%3C%2Fsvg%3E" }
+]
+show_copyright = true
+show_powered_by = true
+show_source = false

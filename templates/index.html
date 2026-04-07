@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% import "macros/publications.html" as publications_macros %}
+
+{% block content %}
+{% set publications = get_section(path="publications/_index.md") %}
+{% set teaching = get_section(path="teaching/_index.md") %}
+
+<section class="home-hero">
+	<div class="home-copy">
+		<p class="hero-kicker">{{ config.extra.profile.role }}</p>
+		<h1>{{ config.title }}</h1>
+		<p class="hero-summary">{{ config.description }}</p>
+		<ul class="hero-topics">
+			{% for topic in config.extra.profile.topics %}
+			<li>{{ topic }}</li>
+			{% endfor %}
+		</ul>
+		<ul class="hero-links">
+			<li><a href="{{ get_url(path=config.extra.profile.resume_pdf) }}">CV PDF</a></li>
+			<li><a href="{{ config.extra.profile.scholar }}">Google Scholar</a></li>
+			<li><a href="{{ config.extra.profile.github }}">GitHub</a></li>
+			<li><a href="{{ config.extra.profile.linkedin }}">LinkedIn</a></li>
+			<li><a href="{{ config.extra.profile.email }}">Email</a></li>
+		</ul>
+	</div>
+	<div class="home-side">
+		<div class="home-photo">
+			<img src="{{ get_url(path=config.extra.profile.hero_image) }}" alt="{{ config.extra.profile.hero_image_alt }}" />
+		</div>
+		<div class="home-signal crt scanlines" aria-hidden="true">
+			<pre>research://status
+lab       = "{{ config.extra.profile.lab }}"
+location  = "{{ config.extra.profile.location }}"
+focus     = ["GPU forward progress", "SPIR-V semantics"]
+tooling   = ["TLA+", "Rust", "compiler infra"]
+state     = "active"<span class="cursor">_</span></pre>
+		</div>
+	</div>
+</section>
+
+<section class="home-panel prose">
+	{{ section.content | safe }}
+</section>
+
+<section class="home-panel">
+	<div class="section-header">
+		<div>
+			<p class="section-kicker">Research</p>
+			<h2>Selected Publications</h2>
+		</div>
+		<a href="{{ publications.permalink | safe }}">View all</a>
+	</div>
+	{% if publications.pages | length > 0 %}
+	{{ publications_macros::cards(pages=publications.pages) }}
+	{% else %}
+	<p class="empty-state">No publications have been published yet.</p>
+	{% endif %}
+</section>
+
+{% if teaching.pages | length > 0 %}
+<section class="home-panel">
+	<div class="section-header">
+		<div>
+			<p class="section-kicker">Teaching</p>
+			<h2>Course Work</h2>
+		</div>
+		<a href="{{ teaching.permalink | safe }}">View all</a>
+	</div>
+	<ul class="compact-list">
+		{% for page in teaching.pages %}
+		<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+		{% endfor %}
+	</ul>
+</section>
+{% endif %}
+{% endblock content %}

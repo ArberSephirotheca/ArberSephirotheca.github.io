@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "macros/publications.html" as publications_macros %}
+
+{% block content %}
+{% set publications = get_section(path="publications/_index.md") %}
+{% set teaching = get_section(path="teaching/_index.md") %}
+
+<h1>{{ page.title }}</h1>
+<div class="cv-page">
+	{{ page.content | safe }}
+</div>
+
+<section class="cv-section">
+	<h2>Publications</h2>
+	{% if publications.pages | length > 0 %}
+	{{ publications_macros::compact(pages=publications.pages) }}
+	{% else %}
+	<p class="empty-state">No publications have been added yet.</p>
+	{% endif %}
+</section>
+
+{% if teaching.pages | length > 0 %}
+<section class="cv-section">
+	<h2>Teaching</h2>
+	<ul class="compact-list">
+		{% for page in teaching.pages %}
+		<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+		{% endfor %}
+	</ul>
+</section>
+{% endif %}
+{% endblock content %}
+
