@@ -55,6 +55,17 @@ linkedin = "https://www.linkedin.com/in/zheyuan-chen-7b3b78180/"
 scholar = "https://scholar.google.com/citations?user=o8bUhzIAAAAJ&hl=zh-CN"
 topics = ["GPU semantics", "Formal Methods", "Programming Languages", "Compilers", "ML Systems"]
 author_aliases = ["Zheyuan Chen", "Z. Chen"]
+author_links = [
+  { name = "Farid Zakaria", url = "https://www.linkedin.com/in/fmzakari/" },
+  { name = "Andrew Quinn", url = "https://arquinn.github.io/" },
+  { name = "Thomas R. W. Scogland", url = "https://people.llnl.gov/scogland1" },
+  { name = "Naomi Rehman", url = "https://www.linkedin.com/in/naomi-rehman/" },
+  { name = "Guido Martínez", url = "https://mtzguido.github.io/" },
+  { name = "Yanwen Xu", url = "https://xuyanwen2012.github.io/" },
+  { name = "Rithik Sharma", url = "https://sharmarithik.github.io/rithiksharma/" },
+  { name = "Shaan Mistry", url = "https://www.linkedin.com/in/shaanmistry/" },
+  { name = "Tyler Sorensen", url = "https://tyler-utah.github.io/" }
+]
 
 [extra.seo]
 alternate_name = "arbersephirotheca.github.io"

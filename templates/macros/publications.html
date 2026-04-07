@@ -1,7 +1,27 @@
 {% import "macros/rel_attributes.html" as macros_rel_attributes %}
 
 {% macro author_text(authors) -%}
-{%- for author in authors -%}{%- if author in config.extra.profile.author_aliases -%}<span class="author-self">{{ author }}</span>{%- else -%}{{ author }}{%- endif -%}{%- if not loop.last -%}, {% endif -%}{%- endfor -%}
+{%- for author in authors -%}
+{%- set is_self = author in config.extra.profile.author_aliases -%}
+{%- set_global author_url = "" -%}
+{%- if config.extra.profile.author_links -%}
+{%- for entry in config.extra.profile.author_links -%}
+{%- if entry.name == author -%}
+{%- set_global author_url = entry.url -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- if author_url and is_self -%}
+<a class="author-link author-link-self" href="{{ author_url | safe }}" rel="{{ macros_rel_attributes::rel_attributes() | trim }}">{{ author }}</a>
+{%- elif author_url -%}
+<a class="author-link" href="{{ author_url | safe }}" rel="{{ macros_rel_attributes::rel_attributes() | trim }}">{{ author }}</a>
+{%- elif is_self -%}
+<span class="author-self">{{ author }}</span>
+{%- else -%}
+{{ author }}
+{%- endif -%}
+{%- if not loop.last -%}, {% endif -%}
+{%- endfor -%}
 {%- endmacro author_text %}
 
 {% macro cards(pages) %}
