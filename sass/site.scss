@@ -21,6 +21,10 @@
 	}
 }
 
+.home-mascot {
+	margin: 0 0 1.25rem;
+}
+
 .home-copy,
 .home-panel,
 .publication-card,
@@ -151,6 +155,57 @@
 .home-signal pre {
 	font-size: 0.82rem;
 	line-height: 1.5;
+}
+
+.rabbit-terminal {
+	margin: 0;
+}
+
+.rabbit-stage {
+	min-height: 13rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.rabbit {
+	margin: 0;
+	padding: 1rem;
+	font-size: 0.64rem;
+	line-height: 1.18;
+	white-space: pre;
+	pointer-events: none;
+}
+
+.rabbit-aa {
+	animation: rabbit-bob 1.8s ease-in-out infinite;
+	font-family:
+		"Osaka-Mono",
+		"MS PGothic",
+		"MS Gothic",
+		"Hiragino Kaku Gothic ProN",
+		"Hiragino Sans",
+		"Yu Gothic",
+		monospace;
+	letter-spacing: 0;
+	text-rendering: optimizeSpeed;
+	transform-origin: top left;
+}
+
+@keyframes rabbit-bob {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-0.28rem);
+	}
+}
+
+@media (prefers-reduced-motion) {
+	.rabbit-aa {
+		animation-duration: 1.8s !important;
+	}
 }
 
 .home-panel {
