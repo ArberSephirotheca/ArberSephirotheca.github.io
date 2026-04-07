@@ -5,6 +5,7 @@ public/
 
 # Ignore the directory for local files during development
 local/
+/*~ # Ignore temporary files created by editors
 
 # Ignore the Gemfile that is generated
 Gemfile.lock
