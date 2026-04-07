@@ -43,7 +43,6 @@ Research Assistant, January 2023 to present
 - Developed a formal operational semantics for GPU warp execution to provide rigorous foundations for portable GPU and ML kernel reasoning.
 - Verified the semantics in TLA+ and used the model to reason about subgroup execution behavior.
 - Helped launch the **WebGPU** backend in llama.cpp, with primary contributions to the portable **FlashAttention** kernel in **WGSL**.
-- Applied software pipelining to overlap global memory access with tensor computation, improving **FlashAttention** performance by 30%.
 
 ## Skills
 
