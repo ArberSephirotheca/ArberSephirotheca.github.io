@@ -215,12 +215,7 @@
 .home-panel.prose pre {
 	margin: 1rem 0;
 	border: 0.0625rem solid color-mix(in srgb, var(--accent-color) 18%, transparent);
-	background:
-		linear-gradient(
-			180deg,
-			color-mix(in srgb, var(--glass-bg) 96%, rgb(255 255 255 / 0.18)),
-			color-mix(in srgb, var(--fg-muted-1) 94%, transparent)
-		);
+	background: rgb(253 246 227 / 0.98);
 	padding: 0.95rem 1.1rem;
 	box-shadow:
 		var(--edge-highlight),
@@ -228,6 +223,26 @@
 		var(--shadow-glass);
 	font-size: clamp(0.86rem, 0.35vw + 0.84rem, 1rem);
 	line-height: 1.5;
+}
+
+[data-theme="dark"] .home-panel.prose pre {
+	border-color: color-mix(in srgb, var(--accent-color) 24%, rgb(255 255 255 / 0.08));
+	background: rgb(0 43 54 / 0.98) !important;
+	box-shadow:
+		0 0 0 0.0625rem rgb(255 255 255 / 0.035),
+		0 1rem 2rem -1.2rem rgb(0 0 0 / 0.65),
+		0 0 1.4rem -1rem color-mix(in srgb, var(--accent-color) 35%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) .home-panel.prose pre {
+		border-color: color-mix(in srgb, var(--accent-color) 24%, rgb(255 255 255 / 0.08));
+		background: rgb(0 43 54 / 0.98) !important;
+		box-shadow:
+			0 0 0 0.0625rem rgb(255 255 255 / 0.035),
+			0 1rem 2rem -1.2rem rgb(0 0 0 / 0.65),
+			0 0 1.4rem -1rem color-mix(in srgb, var(--accent-color) 35%, transparent);
+	}
 }
 
 .home-panel.prose pre code {
