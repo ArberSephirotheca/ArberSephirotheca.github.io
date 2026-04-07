@@ -26,25 +26,26 @@ B.S. in Computer Science, May 2022
 ### Microsoft Research, RiSE Group
 Research Intern, Redmond, Washington, June 2025 to September 2025
 
-- Developed **SIMT-Step**, a formal operational semantics for GPU warp execution that models divergence, reconvergence, and subgroup behavior across architectures.
-- Built a Clang AST-based interpreter and fuzzing framework for High-Level Shading Language (HLSL) to generate warp-execution tests automatically.
-- Discovered and reported warp-execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs.
+- Developed **SIMT-Step**, a formal operational semantics for GPU warp execution to reason about correctness and portability of performance-critical GPU kernels across architectures.
+- Built a Clang AST-based interpreter and fuzzing framework for High-Level Shading Language (HLSL) kernels to generate warp-execution tests automatically.
+- Discovered and reported warp-execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs, exposing portability issues in kernel execution and compiler behavior.
 - Extended the HLSL testing infrastructure with more flexible test definitions, improving coverage and long-term maintainability.
 
 ### Mercedes-Benz Research & Development North America
 Software Engineering Intern, Sunnyvale, California, June 2024 to December 2024
 
 - Contributed to middleware for automated driving systems, improving communication, data flow, and resource sharing across safety-critical components.
-- Developed an automated toolchain to migrate a large Bazel-based CUDA/C++ project to SYCL, reducing manual effort by 90% and improving portability across heterogeneous hardware.
+- Developed an automated toolchain to migrate a large Bazel-based CUDA/C++ project to SYCL, reducing manual effort by 90% and improving kernel portability across heterogeneous hardware.
 
 ### Languages, Systems, and Data Lab, University of California, Santa Cruz
 Research Assistant, January 2023 to present
 
-- Developed a formal operational semantics for GPU warp execution to address the lack of rigorous semantic models in existing GPU programming languages.
+- Developed a formal operational semantics for GPU warp execution to provide rigorous foundations for portable GPU and ML kernel reasoning.
 - Verified the semantics in TLA+ and used the model to reason about subgroup execution behavior.
-- Optimized the portable **FlashAttention** kernel in llama.cpp's **WGSL** backend by applying software pipelining to overlap global memory access with tensor computation, improving performance by 30%.
+- Helped launch the **WebGPU** backend in llama.cpp, with primary contributions to the portable **FlashAttention** kernel in **WGSL**.
+- Applied software pipelining to overlap global memory access with tensor computation, improving **FlashAttention** performance by 30%.
 
 ## Skills
 
-- Languages: Rust, C/C++, Python, Go, HLSL, GLSL, Metal, SPIR-V, TLA+
-- Frameworks and systems: CUDA, SYCL, Vulkan, HIP, OpenCL, LLVM, MLIR
+- Languages: Rust, C/C++, Python, Go, WGSL, HLSL, GLSL, Metal, SPIR-V, TLA+
+- Frameworks and systems: CUDA, WebGPU, SYCL, Vulkan, HIP, OpenCL, LLVM, MLIR

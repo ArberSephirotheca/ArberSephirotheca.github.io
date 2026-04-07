@@ -28,19 +28,19 @@ Ph.D., Computer Science and Engineering
 \begin{rSection}{Research \& Work Experience}
 
 \begin{rSubsection}{Microsoft Research}{Jun 2025 -- Sep 2025}{Research Intern, RiSE Group}{Redmond, WA}
-\item Developed \textbf{SIMT-Step}, a formal operational semantics for GPU warp execution, providing a rigorous model of divergence, reconvergence, and subgroup behavior across architectures.
-\item Built a Clang AST-based interpreter and fuzzing framework for HLSL to automatically generate warp-execution tests.
-\item Discovered and reported numerous warp-execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs, revealing inconsistencies in hardware and compiler behavior.
+\item Developed \textbf{SIMT-Step}, a formal operational semantics for GPU warp execution to reason about correctness and portability of performance-critical GPU kernels across architectures.
+\item Built a Clang AST-based interpreter and fuzzing framework for HLSL kernels to automatically generate warp-execution tests.
+\item Discovered and reported numerous warp-execution bugs under non-uniform control flow across NVIDIA, Intel, and AMD GPUs, exposing portability issues in kernel execution and compiler behavior.
 \end{rSubsection}
 
 \begin{rSubsection}{Mercedes-Benz Research \& Development North America}{Jun 2024 -- Dec 2024}{Software Engineering Intern}{Sunnyvale, CA}
 \item Contributed to middleware for automated driving systems (ADS), improving communication, data flow, and resource sharing across safety-critical components.
-\item Developed an automated toolchain to migrate a large Bazel project (CUDA/C++) to SYCL, reducing manual effort by 90\% and improving portability across heterogeneous hardware.
+\item Developed an automated toolchain to migrate a large Bazel project of CUDA/C++ code to SYCL, reducing manual effort by 90\% and improving kernel portability across heterogeneous hardware.
 \end{rSubsection}
 
 \begin{rSubsection}{Languages, Systems, and Data (LSD) Lab}{Jan 2023 -- Present}{Research Assistant}{University of California, Santa Cruz}
-\item Developed a formal operational semantics for GPU warp execution to address the lack of rigorous semantic models in existing GPU programming languages, and verified key behaviors using TLA+.
-\item Helped launch the \textbf{WebGPU} backend in llama.cpp, with primary contributions to the portable \textbf{FlashAttention} kernel in \textbf{WGSL}.
+\item Developed a formal operational semantics for GPU warp execution to provide rigorous foundations for portable GPU and ML kernel reasoning, and verified key behaviors using TLA+.
+\item Helped launch the \textbf{WebGPU} backend in llama.cpp, with primary contributions to the portable \textbf{FlashAttention} kernel in \textbf{WGSL}; applied \textbf{software pipelining} to overlap global memory accesses with tensor computation and improved performance by \textbf{30\%}.
 
 \end{rSubsection}
 
@@ -56,8 +56,8 @@ Ph.D., Computer Science and Engineering
 
 \begin{rSection}{Skills}
 
-\item \textbf{Languages:} Rust, C/C++, Python, Go, HLSL, GLSL, Metal, SPIR-V, TLA+
-\item \textbf{Frameworks \& Systems:} CUDA, SYCL, Vulkan, HIP, OpenCL, LLVM, MLIR
+\item \textbf{Languages:} Rust, C/C++, Python, Go, WGSL, HLSL, GLSL, Metal, SPIR-V, TLA+
+\item \textbf{Frameworks \& Systems:} CUDA, WebGPU, SYCL, Vulkan, HIP, OpenCL, LLVM, MLIR
 
 \end{rSection}
 
