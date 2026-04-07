@@ -4,7 +4,7 @@
 	grid-template-columns: minmax(0, 1.6fr) minmax(16rem, 1fr);
 	gap: 1.5rem;
 	align-items: center;
-	margin-block: 0 1.5rem;
+	margin-block: 1.1rem 1.5rem;
 
 	&::before {
 		position: absolute;
@@ -22,7 +22,7 @@
 }
 
 .home-mascot {
-	margin: 0 0 1.25rem;
+	margin: 0 0 2.75rem;
 }
 
 .home-copy,
