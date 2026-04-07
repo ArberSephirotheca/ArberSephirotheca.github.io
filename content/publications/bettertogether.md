@@ -5,7 +5,7 @@ date = 2025-10-12
 description = "Data processing on the edge offers advantages over cloud-based solutions, including reduced latency and lower energy consumption. BetterTogether evaluates fine-grained software pipelining across heterogeneous SoCs with GPUs from multiple vendors."
 template = "publication.html"
 aliases = ["/publications/2025-10-21-bettertogether/"]
-authors = ["Yanwen Xu", "R. Sharma", "Z. Chen", "S. Mistry", "T. Sorensen"]
+authors = ["Yanwen Xu", "Rithik Sharma", "Zheyuan Chen", "Shaan Mistry", "Tyler Sorensen"]
 
 [taxonomies]
 categories = ["Conference Papers"]

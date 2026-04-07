@@ -54,6 +54,7 @@ github = "https://github.com/ArberSephirotheca"
 linkedin = "https://www.linkedin.com/in/zheyuan-chen-7b3b78180/"
 scholar = "https://scholar.google.com/citations?user=o8bUhzIAAAAJ&hl=zh-CN"
 topics = ["GPU semantics", "Formal Methods", "Programming Languages", "Compilers", "ML Systems"]
+author_aliases = ["Zheyuan Chen", "Z. Chen"]
 
 [extra.seo]
 alternate_name = "arbersephirotheca.github.io"

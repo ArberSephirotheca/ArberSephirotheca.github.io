@@ -1,5 +1,9 @@
 {% import "macros/rel_attributes.html" as macros_rel_attributes %}
 
+{% macro author_text(authors) -%}
+{%- for author in authors -%}{%- if author in config.extra.profile.author_aliases -%}<span class="author-self">{{ author }}</span>{%- else -%}{{ author }}{%- endif -%}{%- if not loop.last -%}, {% endif -%}{%- endfor -%}
+{%- endmacro author_text %}
+
 {% macro cards(pages) %}
 <div class="publication-list">
 	{% for page in pages %}
@@ -17,7 +21,7 @@
 		<h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
 
 		{% if page.authors %}
-		<p class="publication-authors">{{ page.authors | join(sep=", ") }}</p>
+		<p class="publication-authors">{{ self::author_text(authors=page.authors) | safe }}</p>
 		{% endif %}
 
 		{% if page.description %}
@@ -69,7 +73,7 @@
 		<strong><a href="{{ page.permalink | safe }}">{{ page.title }}</a></strong>
 		<ul class="publication-record-meta">
 			{% if page.authors %}
-			<li>{{ page.authors | join(sep=", ") }}</li>
+			<li>{{ self::author_text(authors=page.authors) | safe }}</li>
 			{% endif %}
 			<li>
 				<em>{{ page.extra.venue_full | default(value=page.extra.venue) }}</em>
@@ -103,6 +107,9 @@
 	{% for page in pages %}
 	<li>
 		<a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+		{% if page.authors %}
+		<div class="compact-authors">{{ self::author_text(authors=page.authors) | safe }}</div>
+		{% endif %}
 		{% if page.extra.award %}
 		<span class="compact-award">{{ page.extra.award }}</span>
 		{% endif %}

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% import "macros/rel_attributes.html" as macros_rel_attributes %}
+{% import "macros/publications.html" as publications_macros %}
 
 {% block content %}
 <article class="publication-page{% if page.extra.award %} publication-page-awarded{% endif %}">
@@ -16,7 +17,7 @@
 	<h1>{{ page.title }}</h1>
 
 	{% if page.authors %}
-	<p class="publication-authors publication-authors-detail">{{ page.authors | join(sep=", ") }}</p>
+	<p class="publication-authors publication-authors-detail">{{ publications_macros::author_text(authors=page.authors) | safe }}</p>
 	{% endif %}
 
 	{% if page.extra.venue_full or page.extra.venue or page.extra.award %}
