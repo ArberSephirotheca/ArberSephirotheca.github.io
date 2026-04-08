@@ -87,8 +87,8 @@
 			"-".repeat(innerWidth) +
 			"'</div>";
 		let remainingVisible = visibleCharacters;
-		const rows = wrappedFull.map((_, index) => {
-			const leftEdge = index === 0 ? "&lt;|" : "&nbsp;|";
+			const rows = wrappedFull.map((_, index) => {
+				const leftEdge = index === 0 ? "&lt;|" : " |";
 			const fullLine = wrappedFull[index];
 			const lineChars = Array.from(fullLine);
 			const visibleOnLine = Math.min(remainingVisible, lineChars.length);
