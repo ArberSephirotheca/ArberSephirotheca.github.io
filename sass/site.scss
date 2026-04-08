@@ -21,8 +21,8 @@
 	}
 }
 
-.home-mascot {
-	margin: 0 0 2.75rem;
+.home-top-mascot {
+	margin: 0 0 2rem;
 }
 
 .home-copy,
@@ -162,22 +162,33 @@
 }
 
 .rabbit-stage {
-	min-height: 13rem;
+	min-height: 0;
 	overflow-x: auto;
 	overflow-y: hidden;
 }
 
 .rabbit {
 	margin: 0;
-	padding: 1rem;
-	font-size: 0.64rem;
-	line-height: 1.18;
+	padding: 0.8rem 0.95rem;
+	font-size: 0.58rem;
+	line-height: 1.08;
 	white-space: pre;
 	pointer-events: none;
 }
 
+.rabbit-stage-large {
+	min-height: 16rem;
+	display: grid;
+	align-items: start;
+}
+
+.rabbit-large {
+	padding: 0.9rem 1rem;
+	font-size: 0.42rem;
+	line-height: 1.02;
+}
+
 .rabbit-aa {
-	animation: rabbit-bob 1.8s ease-in-out infinite;
 	font-family:
 		"Osaka-Mono",
 		"MS PGothic",
@@ -191,20 +202,9 @@
 	transform-origin: top left;
 }
 
-@keyframes rabbit-bob {
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-0.28rem);
-	}
-}
-
 @media (prefers-reduced-motion) {
 	.rabbit-aa {
-		animation-duration: 1.8s !important;
+		animation: none !important;
 	}
 }
 
