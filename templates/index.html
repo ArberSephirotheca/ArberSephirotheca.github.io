@@ -7,7 +7,13 @@
 {% set news = get_section(path="news/_index.md") %}
 {% set teaching = get_section(path="teaching/_index.md") %}
 
-<div class="home-top-mascot rabbit-terminal crt scanlines" aria-hidden="true">
+<div
+	class="home-top-mascot rabbit-terminal crt scanlines"
+	role="button"
+	tabindex="0"
+	aria-label="Show a random quote"
+	aria-controls="mascot-bubble"
+>
 	<div class="rabbit-stage rabbit-stage-large">
 		<pre class="rabbit rabbit-aa rabbit-large" lang="ja">　　　　　　　　　　　　　　　　 　 　 　 {　 　　 /》ヽ
 　　　　　　　　　　　　　　　 　 　 　 　 ヽ　　/ 《¨｀ﾒ- ‐─、-‐──､_
@@ -49,8 +55,9 @@
 　　　　　　　　　　　　　　　　　 　 　 　 　 　 　 　 |　　　　　　 　 　 　 ｀ヽ.　 |　ｌ　　　∧
 　　　　　　　　　　　　　　　　　 　 　 　 　 　 　 　 l　　　　　　　　　　　　　＼ ノ　 　　 ∧
 　　　　　　　　　　　　　　　　　　　　　　　　　　　 l＿＿＿＿＿＿ 　 ＿.　　＼　　　　 ∧
-　　　　　　　　　　　　　　　　　　　　　　　　　　　〔＿:::::::::::::::::::::::::::───::::::::::＼　　 ∧</pre>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　〔＿:::::::::::::::::::::::::::───::::::::::＼　 　 ∧</pre>
 	</div>
+	<div class="mascot-bubble" id="mascot-bubble" lang="ja" role="status" aria-live="polite" aria-atomic="true"></div>
 </div>
 
 <section class="home-hero">

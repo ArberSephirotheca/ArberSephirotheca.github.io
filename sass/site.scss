@@ -22,7 +22,14 @@
 }
 
 .home-top-mascot {
+	position: relative;
 	margin: 0 0 2rem;
+	cursor: pointer;
+}
+
+.home-top-mascot:focus-visible {
+	outline: 0.125rem solid color-mix(in srgb, var(--accent-color) 45%, transparent);
+	outline-offset: 0.2rem;
 }
 
 .home-copy,
@@ -188,6 +195,86 @@
 	line-height: 1.02;
 }
 
+.mascot-bubble {
+	position: absolute;
+	inset-block-start: 0.7rem;
+	inset-inline-start: clamp(12rem, 27vw, 24rem);
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	color: color-mix(in srgb, var(--accent-color) 90%, rgb(255 244 232 / 0.85));
+	font-size: 0.8rem;
+	line-height: 1.08;
+	font-family:
+		"Osaka-Mono",
+		"MS PGothic",
+		"MS Gothic",
+		"Hiragino Kaku Gothic ProN",
+		"Hiragino Sans",
+		"Yu Gothic",
+		monospace;
+	text-shadow: 0 0 0.7rem color-mix(in srgb, var(--accent-color) 18%, transparent);
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(0.35rem) scale(0.98);
+	transform-origin: top left;
+	transition:
+		opacity 180ms ease,
+		transform 180ms ease;
+}
+
+.mascot-bubble:not(:empty),
+.mascot-bubble.is-visible {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+}
+
+.bubble-line,
+.bubble-row {
+	display: grid;
+	align-items: start;
+}
+
+.bubble-line {
+	grid-template-columns: auto;
+}
+
+.bubble-row {
+	grid-template-columns: 2ch auto 1ch;
+	column-gap: 0;
+}
+
+.bubble-left-edge,
+.bubble-side,
+.bubble-text {
+	white-space: pre;
+}
+
+.bubble-left-edge,
+.bubble-side {
+	display: inline-block;
+}
+
+.bubble-left-edge {
+	transform: translateX(-0.36em);
+}
+
+.bubble-side-right {
+	transform: translateX(-0.34em);
+}
+
+.bubble-text {
+	display: inline-block;
+}
+
+.bubble-pending {
+	visibility: hidden;
+	text-shadow: none;
+}
+
 .rabbit-aa {
 	font-family:
 		"Osaka-Mono",
@@ -205,6 +292,17 @@
 @media (prefers-reduced-motion) {
 	.rabbit-aa {
 		animation: none !important;
+	}
+
+	.mascot-bubble {
+		transition: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.mascot-bubble {
+		position: static;
+		margin: 0 1rem 1rem auto;
 	}
 }
 
