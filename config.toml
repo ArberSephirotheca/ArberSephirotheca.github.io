@@ -56,6 +56,11 @@ scholar = "https://scholar.google.com/citations?user=o8bUhzIAAAAJ&hl=zh-CN"
 topics = ["GPU semantics", "Formal Methods", "Programming Languages", "Compilers", "ML Systems"]
 author_aliases = ["Zheyuan Chen", "Z. Chen"]
 author_links = [
+  { name = "Reese Levine", url = "https://reeselevine.github.io/" },
+  { name = "Nikhil Jain", url = "https://www.linkedin.com/in/n-jain23/" },
+  { name = "Abhijit Ramesh", url = "https://abhijitramesh.me/" },
+  { name = "Neha Abbas", url = "https://www.linkedin.com/in/neha-a-827406275/" },
+  { name = "James Contini", url = "https://www.linkedin.com/in/james-contini-3957a79a/" },
   { name = "Farid Zakaria", url = "https://www.linkedin.com/in/fmzakari/" },
   { name = "Andrew Quinn", url = "https://arquinn.github.io/" },
   { name = "Thomas R. W. Scogland", url = "https://people.llnl.gov/scogland1" },

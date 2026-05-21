@@ -3,6 +3,7 @@ title = "Latest News"
 template = "news.html"
 +++
 
+- **May 2026** — Our work [**Llamas on the Web**](@/publications/llamas-on-the-web.md) was published on **arXiv**.
 - **Apr 2026** — Our work [**SIMT-Step Execution**](@/publications/simt-step.md) was accepted to **PLDI 2026**.
 - **Oct 2025** — [**BetterTogether**](@/publications/bettertogether.md) received the **Best Paper Award** at **IISWC 2025**.
 - **Summer 2025** — I joined **Microsoft Research** at [**RiSE**](https://www.microsoft.com/en-us/research/group/research-software-engineering-rise/) group as a Research Intern.
